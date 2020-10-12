@@ -1,6 +1,11 @@
 .form {
   width: 100%;  
   margin-top: 34px;
+  @include mq('768') {
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 .form__input {
   width: 280px;
@@ -12,8 +17,19 @@
   color: $black;
   margin: 0 auto;
   display: block;
+  @include mq('768') {
+    margin: 0;
+    width: 247px;
+    margin-right: 37px;
+  }
+  @include mq ("1600") {
+    width: 419px;
+  }
 }
 
 .form__btn {
   margin: 22px auto 0;
+  @include mq('768') {
+    margin: 0;
+  }
 }

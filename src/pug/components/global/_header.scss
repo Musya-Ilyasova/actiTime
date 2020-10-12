@@ -28,6 +28,9 @@ header {
   height: 24px;
   padding: 0;
   position: relative;
+  @include mq ('1024') {
+    display: none;
+  }
   span {
     width: 100%;
     height: 3px;
@@ -83,6 +86,14 @@ header {
   overflow: hidden;
   background: $white;
   transition: max-height 0.2s ease;
+  @include mq ('1024') {
+    position: relative;
+    max-height: none;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    overflow: visible;
+  }
   &.open-menu {
     position: absolute;
     max-height: 800px;
@@ -91,6 +102,10 @@ header {
 .header-menu {
   width: 100%;
   border-top: 1px solid #D6B9FF;
+  @include mq ('1024') {
+    border: none;
+    margin-left: 131px;
+  }
 }
 .header-menu__item {
   font-size: 27px;
@@ -99,15 +114,28 @@ header {
   line-height: 1;
   padding: 24px 32px;
   font-weight: 500;
+  @include mq ('1024') {
+    border-bottom: none;
+    padding: 0 10px;
+    width: auto;
+    display: inline-block;
+    margin-right: 5%;
+  }
 }
 
 .header__btn {
   margin: 44px auto;
+  @include mq ('1024') {
+    margin: 0;
+  }
 }
 
 .header-menu__item_toggle {
   position: relative;
   padding: 0;
+  @include mq ('1024') {
+    padding-right: 20px;
+  }
   .icon {
     width: 11px;
     height: 18px;
@@ -116,10 +144,22 @@ header {
     right: 31px;
     transform: rotate(0);
     transition: transform 0.2s ease;
+    fill: $black;
+    @include mq ('1024') {
+      top: 50%;
+      transform: translateY(-50%) rotate(90deg);
+      right: 0;
+      width: 15px;
+      height: 15px;
+    }
   }
   &.open-submenu {
     .icon {
       transform: rotate(90deg);
+      fill: $purple;
+      @include mq ('1024') {
+        transform: translateY(-50%) rotate(-90deg);
+      }
     }
     .header-submenu {
       max-height: 500px;
@@ -129,6 +169,9 @@ header {
   span {
     display: inline-block;
     padding: 24px 32px;
+    @include mq ('1024') {
+      padding: 0;
+    }
   }    
 }
 
@@ -139,9 +182,23 @@ header {
   transition: 0.2s ease;
   transition-property: opacity, max-height;
   border-top: 1px solid #D6B9FF;
+  @include mq ('1024') {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 500;
+    background: $white;
+    margin-top: 24px;
+    border: 1px solid #D6B9FF;
+    transition: max-height 0.2s ease;
+  }
 }
 
 .header-submenu__item {
   font-weight: 400;
   padding: 24px 32px 24px 62px;
+  @include mq ('1024') {
+    padding: 24px 10px;
+    white-space: nowrap;
+  }
 }

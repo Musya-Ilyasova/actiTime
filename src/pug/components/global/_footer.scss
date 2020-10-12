@@ -2,15 +2,49 @@ footer {
   background: $purple;
   padding: 58px 0 52px;
   color: $white;
+  @include mq ("768") {
+    padding: 52px 0 37px;
+  }
+  @include mq ("1024") {
+    padding: 74px 0;
+  }
 }
 
 .footer__wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  @include mq ("768") {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto;
+    grid-row-gap: 20px;
+  }
+}
+
+.footer__logo {
+  @include mq ("768") {
+    margin-right: 71px;
+  }
+  @include mq ("1600") {
+    margin-right: 191px;
+  }
+}
+
+.footer__list {
+  @include mq ("1024") {
+    display: flex;
+    align-content: center;
+  }
 }
 
 
 .footer-list__link {
   line-height: 2.5;
+  @include mq ("1024") {
+    margin-right: 54px;
+  }
+  &:hover {
+    color: $yellow;
+  }
 }

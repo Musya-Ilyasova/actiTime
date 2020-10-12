@@ -84,9 +84,13 @@ a {
   color: inherit;
   font-weight: 500;
   display: inline-block;
+  transition: color 0.2s ease;
   &:focus {
     outline: 0;
     box-shadow: 0 0 0 2px #e4f1fd7a;
+  }
+  &:hover {
+    color: $purple;
   }
   &:not([class]) {
     text-decoration-skip-ink: auto;

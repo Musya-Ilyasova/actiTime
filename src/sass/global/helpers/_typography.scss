@@ -4,6 +4,9 @@ h1 {
   font-weight: 700;
   color: $black;
   line-height: 1.28;
+  @include mq ('768') {
+    font-size: 40px;
+  }
 }
 
 h3 {
