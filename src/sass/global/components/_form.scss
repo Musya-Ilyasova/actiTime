@@ -1,0 +1,19 @@
+.form {
+  width: 100%;  
+  margin-top: 34px;
+}
+.form__input {
+  width: 280px;
+  height: 48px;
+  padding: 15px;
+  border: none;
+  font-size: 16px;
+  border-radius: 4px;
+  color: $black;
+  margin: 0 auto;
+  display: block;
+}
+
+.form__btn {
+  margin: 22px auto 0;
+}

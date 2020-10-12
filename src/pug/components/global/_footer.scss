@@ -1,0 +1,16 @@
+footer {
+  background: $purple;
+  padding: 58px 0 52px;
+  color: $white;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.footer-list__link {
+  line-height: 2.5;
+}

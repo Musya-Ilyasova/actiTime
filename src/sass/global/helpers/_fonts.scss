@@ -1,11 +1,24 @@
-//EXAMPLE
-// @include font-face( 
-//   "MullerBold",
-//   "../fonts/MullerBold",
-//   400,
-//   normal,
-//   woff woff2 
-// );
+@include font-face( 
+  "Roboto",
+  "../fonts/roboto",
+  400,
+  normal,
+  woff woff2 
+);
+@include font-face( 
+  "Roboto",
+  "../fonts/Roboto-Medium",
+  500,
+  normal,
+  woff woff2 
+);
+@include font-face( 
+  "Roboto",
+  "../fonts/roboto-bold",
+  700,
+  normal,
+  woff woff2 
+);
 
 /* weights
 thin-100

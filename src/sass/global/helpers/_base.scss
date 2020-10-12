@@ -19,9 +19,9 @@ html {
 body {
   font-family: $font-family-main;
   font-size: $font-size-main;
-  line-height: 1.2;
+  line-height: 1.6;
   font-weight: 400;
-  color: $black;
+  color: $color-text;
   //Flexbox
   display: flex;
   flex-flow: column;
@@ -36,6 +36,9 @@ body {
   &::-webkit-scrollbar-thumb {
     background-color: $red;
   }*/
+  &.noscroll {
+    overflow: hidden;
+  }
 }
 
 img,
@@ -79,6 +82,8 @@ input[type="number"]::-webkit-inner-spin-button {
 a {
   text-decoration: none;
   color: inherit;
+  font-weight: 500;
+  display: inline-block;
   &:focus {
     outline: 0;
     box-shadow: 0 0 0 2px #e4f1fd7a;

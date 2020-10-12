@@ -1,14 +1,18 @@
-$font-family-main: Arial,
-"Times New Roman",
+$font-family-main: Roboto,
 serif;
 //SIZE
 $font-size-main: 16px;
-$font-size-h1: 40px;
-$font-size-h2: 32px;
+$font-size-h1: 35px;
+$font-size-h3: 25px;
 //COLORS
-$black: #000;
+$black: #212353;
 $white: #fff;
+$purple: #9C69E2;
+$yellow: #FFC84D;
+$yellow-2: #EEAA12;
+$yellow-3: #FFF3D7;
+$color-text: #4B5D68;
 
-$breakpoints: ("320": 320px, "768": 768px, "1024": 1024px, "1280": 1280px, "1440": 1440px, "1600": 1600px);
+$breakpoints: ("320": 320px, "768": 768px, "992": 992px, "1600": 1600px);
 //width container
-$max-width: 1640px;
+$max-width: 1200px;

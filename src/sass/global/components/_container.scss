@@ -6,18 +6,10 @@
   margin: auto; 
 
   @include mq('768') {
-    padding: 0 32px;
+    padding: 0 24px;
   }
   
-  @include mq('1024') {
-    padding: 0 40px;
-  }
-
-  @include mq('1280') {
-    padding: 0 75px;
-  }
-
-  @include mq('1440') {
-    padding: 0 140px;
+  @include mq('992') {
+    padding: 0 32px;
   }
 }

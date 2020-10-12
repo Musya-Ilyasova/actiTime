@@ -1,2 +1,13 @@
 //footer
 footer
+  .container.footer__wrapper
+    a.logo
+      +icon('logo-white')
+    ul.footer__list
+      li
+        a.footer-list__link(href="#") About Us
+      li
+        a.footer-list__link(href="#") Privacy Policy
+    form.form(action="" method="POST")
+      input.form__input(type="email", name="email", placeholder="Enter your email")
+      button.btn.form__btn(type="submit") Sign Up Now

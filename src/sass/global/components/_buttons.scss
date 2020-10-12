@@ -1,0 +1,54 @@
+.btn,
+.btn[type="button"] {
+  //position
+  position: relative;
+  display: block;
+  //box mmodel
+  vertical-align: middle;
+  width: 100%;
+  max-width: 148px;
+  height: 48px;
+  border-radius: 50px;
+  //font
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 48px;
+  color: $white;
+  text-align: center;
+  text-overflow: ellipsis;
+  background-color: $yellow-2; 
+  // other
+  overflow: hidden;
+  cursor: pointer;
+  touch-action: manipulation;;
+  user-select: none;
+  z-index: 1;
+  transition: .3s ease;
+  // transition-property: background, color;
+  padding: 0 15px;
+  @include mq('768') {
+    width: 223px;
+  }
+  @include mq('1280') {
+    width: 310px;
+  }
+  &:focus, &:hover {
+    background: lighten($color: $yellow-2, $amount: 10%);
+    color: $white;
+    box-shadow: none;
+  }
+  &:active  {
+    background: darken($color: $yellow-2, $amount: 5%);
+    color: $white;
+  }
+}
+
+.btn_second {
+  background: $purple;
+  &:focus, &:hover {
+    background: lighten($color: $purple, $amount: 10%);
+  }
+  &:active  {
+    background: darken($color: $purple, $amount: 5%);
+  }
+}
